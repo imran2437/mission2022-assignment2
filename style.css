@@ -1,0 +1,285 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 50px 90px;
+    margin: 0;
+}
+/* header section style */
+
+.hadding {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hadding a {
+    margin: auto 10px;
+    text-decoration: none;
+    color: #630829;
+}
+
+.hadding h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: #630829;
+}
+section{
+    padding: 50px 0;
+}
+
+.top-section{
+    display: flex;
+    align-items: center;
+}
+.header-title{
+    width: 90%;
+}
+.header-img img{
+    width: 100%;
+    
+}
+.header-img:hover{
+    transform: scale(1.1) rotateY(180deg);
+    transition: transform 2s;
+}
+.header-title h1{
+    font-size: 52px;
+    font-weight: 700;
+    color: #3A3A3A;
+}
+.header-title p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #3A3A3A;
+    padding-bottom: 16px;
+}
+.btn{
+    text-decoration: none;
+    background-color: #630829;
+    color: #FFFFFF;
+    padding: 10px 24px;
+    border-radius: 41px;
+}
+.btn i{
+    margin: 0px 8px;
+}
+
+/* collaction section style  */
+
+.collection-section h2{
+    color: #0e0c0c;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #0a0004;
+    text-decoration-thickness: 5px;
+}
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.collection{
+    border: 1px solid #FFFFFF;
+    margin: 20px 50px;
+    padding: 20px;
+    box-shadow: 2px 2px 3px 3px #00000015;
+    border-radius: 15px;
+}
+.collection-img{
+    display: flex;
+    justify-content: center;
+}
+.collection img{
+    width: 300px;
+    height: 256px;
+}
+
+.collection-details h3{
+    font-size: 28px;
+    font-weight: 500;
+    color: #18191F;
+    margin: 5px 0;
+}
+.collection-details h4{
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+    margin: 5px 0;
+}
+.ratting{
+    display: flex;
+    align-items: center;
+}
+.ratting .filde{
+    color: #FB8200;
+}
+.ratting p{
+   margin-left: 8px;
+}
+.collection-details p{
+    color: #787885;
+    font-size: 14px;
+    font-weight: 700;
+}
+.collection-section .see-more-button{
+    text-decoration: none;
+    color: #E02C6D;
+    text-align: right;
+    padding-right: 30px;
+}
+.collection-section #btn{
+    text-decoration: none;
+    color: #E02C6D;
+    text-align: right;
+    margin-right: 25px;
+}
+    /* top seller style */
+    
+.section-title{
+        color: #080808;
+        text-decoration: underline;
+        font-size: 28px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 50px;
+    
+}
+
+.sellers{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+  
+.seller{
+    display: flex;
+    margin-bottom: 26px;
+    }
+.seller img{
+        height: 177px;
+        width: 177px;
+}
+.seller-info{
+        margin-left: 16px;
+}
+.seller-title{
+        font-size: 20px;
+ }
+.name{
+        font-size:16px;
+        color: #9F9F9F;;
+}
+.name a{
+        color: #562EFF;
+        text-decoration: none;
+ }
+
+
+/* footer section style start */
+footer{
+    background-color: rgb(3, 3, 37);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.footer-details h2{
+    font-size: 24px;
+    font-size: 700;
+}
+.footer-details p{
+    font-size: 14px;
+    font-size: 700;
+}
+
+/* responsive for mobile device */
+
+@media(max-width:688px){
+    /* heading section */
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    section{
+        padding:0;
+    }
+    .hadding h3{
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .top-section{
+        flex-direction: column;
+    }
+    .header-title h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .header-title p {
+        text-align: center;
+        font-size: 13px;
+    }
+    .btn {
+        margin-left: 60px;
+    }
+    .collection img {
+        width: 220px;
+        height: 170px;
+    }
+    .header-img img {
+        width: 80%;
+        margin: 35px;
+    }
+    .container {
+        padding: 30px;
+    }
+    /* collection section */
+    .collections {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+    .collection-section .see-more-button {
+        padding-right: 0;
+    }
+    /* seller section */
+    .sellers {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .seller {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .seller-info {
+        margin-left: 0px;
+    }
+    h3.sellerg-title {
+        font-size: 12px;
+    }
+    p.namer {
+        font-size: 10px;
+    }
+    .manu{
+        display: none;
+    }
+}
+/* responsive for tab device */
+@media(min-width:688px) and (max-width:992px){
+    body {
+        padding: 0px 30px;
+        margin: 0;
+    }
+    .collections {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .collection {
+        margin: 12px 12px;
+    }
+
+
+.manu{
+    display: none;
+}
+}
